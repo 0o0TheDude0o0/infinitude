@@ -5,6 +5,6 @@ RUN apt-get update && apt-get -y upgrade \
 	&& git clone https://github.com/nebulous/infinitude.git /infinitude \ 
     && chmod +x /infinitude/infinitude \
     && cd /infinitude \
-    && cpanm Mojolicious::Lite CHI DateTime Try::Tiny Path::Tiny JSON IO::Termios
+    && cpanm Mojolicious::Lite CHI DateTime Try::Tiny Path::Tiny JSON
 EXPOSE 3000
 ENTRYPOINT /infinitude/docker/entrypoint.sh
